@@ -25,7 +25,7 @@ public class Main {
 		int value = 0;
 
 		if (array.length != 2 || array[0].length != 4 || array[1].length != 4) {
-			System.out.println("Ошибка в размере массива: " + array);
+			System.out.println("Ошибка в размере массива.");
 		}
 
 		for (int i = 0; i < 2; i++) {
@@ -36,7 +36,7 @@ public class Main {
 					Integer.parseInt(array[i][j]);
 					summ += value;
 				} catch (IllegalArgumentException e) {
-					System.out.println("Употребление недопустимого аргумента в массиве: " + array);
+					System.out.println("Употребление недопустимого аргумента в массиве.");
 					System.out.println("В " + row + " ряду, " + cell + " ячейке");
 				}
 			}
